@@ -17,6 +17,7 @@ public class Aplicacion5 implements ActionListener{
     JTextField tTexto;
     int numTexto;
     String num;
+    int v;
     
     public void ventana(){
         marco = new JFrame("Exercicio 25B");
@@ -52,7 +53,8 @@ public class Aplicacion5 implements ActionListener{
             for(int i = 0;numTexto == i;i++){
             
             Graphics g = panel2.getGraphics();
-            g.drawOval(10, 10, 10, 10);
+            g.drawOval(200+v, 200, 10, 10);
+            v=+15;
             }
         }else
             panel2.repaint();
